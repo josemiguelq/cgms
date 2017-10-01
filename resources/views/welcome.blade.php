@@ -4,7 +4,7 @@
         
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1"> 
-            <meta name="description" content="Ciclo Grande - Bicicletas compartilhadas">
+            <meta name="WEBSITE-DESCRIPTION" content="Ciclo Grande - Bicicletas compartilhadas">
             <title>Ciclo Grande</title> 
             
             <link rel="shortcut icon" href="landing/images/favicon.ico">
