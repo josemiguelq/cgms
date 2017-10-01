@@ -4,10 +4,9 @@
         
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1"> 
+            <meta name="description" content="Ciclo Grande - Bicicletas compartilhadas">
             <title>Ciclo Grande</title> 
-            <meta name="description" content="" />
-            <meta name="keywords" content="" />
-            <meta name="author" content="Coderthemes" />   
+            
             <link rel="shortcut icon" href="landing/images/favicon.ico">
 
             <!-- Google Font -->
