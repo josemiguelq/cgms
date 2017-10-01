@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
-        <head>
+        
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1"> 
-            <title>Staro - Responsive Landing Page Template</title> 
+            <title>Ciclo Grande</title> 
             <meta name="description" content="" />
             <meta name="keywords" content="" />
             <meta name="author" content="Coderthemes" />   
@@ -31,7 +31,7 @@
             <!-- Custom Css -->
             <link rel="stylesheet" type="text/css" href="landing/css/style.css" />
 
-      </head>
+      
 
 
     </head>
@@ -47,7 +47,7 @@
                         </button>
                     <!-- LOGO -->
                     <a class="navbar-brand logo" href="index.html">
-                        Staro
+                        Ciclo Grande
                     </a>
                     </div>
                     <!-- end navbar-header -->
@@ -62,29 +62,30 @@
                                 <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="#features">Features</a>
-                            </li>
-                           
-                            <li>
                                 <a href="#team">Team</a>
                             </li>                        
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact">Contato</a>
                             </li>
                              @if (Route::has('login'))
-                            <li>
+                            
                                 @auth
+                                <li>
                                     <a href="{{ url('/home') }}">Home</a>
+                                    </li>
                                 @else
+                                <li>
                                     <a href="{{ route('login') }}">Login</a>
-                                    <a href="{{ route('register') }}">Register</a>
+                                    </li>
+                                    <li><a href="{{ route('register') }}">Register</a>
+                                    </li>
                                 @endauth
                             </li>
                         @endif
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <button type="button" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Try it Free</button>
+                                <button type="button" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Login</button>
                             </li>
                         </ul>
                     </div>
@@ -101,19 +102,19 @@
                         <div class="container">
                             <div class="row vertical-content">
                                 <div class="col-md-7 text-white text-left margin-t-30">
-                                    <h1 class="home-title">We help startups launch their products</h1>
-                                    <p class="padding-t-15 home-desc home-subtitle-width-100">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.</p>
-                                    <p class="padding-t-15 home-desc home-subtitle-width-100">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.</p>
-                                    <a href="#" class="btn btn-custom margin-t-30 waves-effect waves-light">Get Started</a>
+                                    <h1 class="home-title">E aí, vamos de bike?</h1>
+                                    <p class="padding-t-15 home-desc home-subtitle-width-100">Está chegando na Cidade Morena as bicicletas compartilhadas. Agora você vai poder pegar uma bicicleta e sair pedalando pela cidade e devolver no ponto mais próximo de você.</p>
+                                    <p class="padding-t-15 home-desc home-subtitle-width-100">Imagina poder ir para o trabalho de bicicleta sem se preocupar onde vai guardar a bicicleta. Seja um dos primeiros, solicite seu convite já!</p>
+                                    <a href="#" class="btn btn-custom margin-t-30 waves-effect waves-light">Quero meu convite!</a>
                                 </div>
                                 <div class="col-md-4 col-md-offset-1 margin-t-30">
                                     <div class="home-registration-form bg-white">
-                                        <h4 class="form-heading text-center">Get 30 day FREE Trial</h4>
+                                        <h4 class="form-heading text-center">Receba um convite</h4>
                                         <form class="registration-form" id="contact-form">
-                                            <input type="text" id="exampleInputName1" class="form-control registration-input-box" placeholder="Name">
+                                            <input type="text" id="exampleInputName1" class="form-control registration-input-box" placeholder="Nome">
                                             <input type="email" id="exampleInputEmail1" class="form-control registration-input-box" placeholder="Email">
-                                            <textarea class="form-control registration-textarea-box" rows="4" placeholder="Message"></textarea>
-                                            <button class="btn btn-custom home-btn-width waves-effect waves-light text-uppercase">Send Detail</button>
+                                            <input type="" name="" class="form-control registration-input-box" rows="4" placeholder="Celular"></input>
+                                            <button class="btn btn-custom home-btn-width waves-effect waves-light text-uppercase">Receber um convite</button>
                                         </form>
                                     </div>
                                 </div>
@@ -130,7 +131,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h1 class="section-title text-center">Our Services</h1>
+                            <h1 class="section-title text-center">Vantagens</h1>
                             <div class="section-title-border margin-t-20"></div>
                             <p class="section-subtitle text-muted text-center padding-t-30 font-secondary">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
                         </div>
@@ -139,47 +140,26 @@
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
                                 <i class="pe-7s-diamond text-custom"></i>
-                                <h4 class="padding-t-15">Digital Design</h4>
+                                <h4 class="padding-t-15">Saúde</h4>
                                 <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                             </div>
                         </div>
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
                                 <i class="pe-7s-display2 text-custom"></i>
-                                <h4 class="padding-t-15">Unlimited Colors</h4>
+                                <h4 class="padding-t-15">Economia</h4>
                                 <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                             </div>
                         </div>
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
                                 <i class="pe-7s-piggy text-custom"></i>
-                                <h4 class="padding-t-15">Strategy Solutions</h4>
+                                <h4 class="padding-t-15">Mobilidade</h4>
                                 <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row margin-t-30">
-                        <div class="col-md-4 margin-t-20">
-                            <div class="services-box text-center">
-                                <i class="pe-7s-science text-custom"></i>
-                                <h4 class="padding-t-15">Awesome Support</h4>
-                                <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 margin-t-20">
-                            <div class="services-box text-center">
-                                <i class="pe-7s-news-paper text-custom"></i>
-                                <h4 class="padding-t-15">Truly Multipurpose</h4>
-                                <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 margin-t-20">
-                            <div class="services-box text-center">
-                                <i class="pe-7s-plane text-custom"></i>
-                                <h4 class="padding-t-15">Easy to customize</h4>
-                                <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>
             </section>
@@ -192,35 +172,34 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h2 class="text-white">Perfact solution for small businesses</h2>
-                            <p class="padding-t-15 home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing eli.Lorem ipsum dolor sit amet, consectetur adipisicing eli.</p>
-                            <a href="#" class="btn btn-custom margin-t-30 waves-effect waves-light">View Plan & Pricing</a>
+                            <h2 class="text-white">Simplifique sua vida, vá de bike</h2>
+                            <p class="padding-t-15 home-desc">Largue o carro e venha ser mais mais saudável.</p>
+                            <a href="#" class="btn btn-custom margin-t-30 waves-effect waves-light">Receber convite </a>
                         </div>
                     </div>
                 </div>
             </section>
             <!--END WEBSITE-DESCRIPTION-->
 
-            <!--END ABOUT US-->
+            
+<!--END ABOUT US-->
             <section class="section" id="features">
                 <div class="container">
                     <div class="row vertical-content">
                         <div class="col-md-5">
                             <div class="features-box">
-                                <h2 class="">We are digital creative agency</h2>
-                                <p class="text-muted web-desc">Lorem ipsum dolor sit amet, consectetur adipisicing eli.Lorem ipsum dolor sit amet, consectetur adipisicing eli.Lorem ipsum dolor sit amet, consectetur adipisicing eli.</p>
+                                <h2 class="">Venha pedalar por Campo Grande</h2>
+                                <p class="text-muted web-desc">Campo grande tem mais de 79 km de ciclovias.....</p>
                                 <ul class="text-muted list-unstyled margin-t-30 features-item-list">
-                                    <li class="">We put a lot of effort in design.</li>
-                                    <li class="">The most important ingredient of successful website.</li>
-                                    <li class="">Sed ut perspiciatis unde omnis iste natus error sit.</li>
-                                    <li class="">Submit Your Orgnization.</li>
+                                    <li class="">Melhora o condicionamento físico.</li>
+                                   
                                 </ul>
                                 <a href="#" class="btn btn-custom margin-t-30 waves-effect waves-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="features-img features-right">
-                                <img src="images/macbook.png" alt="macbook image" class="img-responsive">
+                                <img src="landing/images/macbook.jpg" alt="macbook image" class="img-responsive">
                             </div>
                         </div>
                     </div>
@@ -229,134 +208,6 @@
             <!--END ABOUT US-->
 
 
-            <!--START PRICING-->
-            <section class="section bg-gray" id="pricing">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="section-title text-center">Our Pricing</h1>
-                            <div class="section-title-border margin-t-20"></div>
-                            <p class="section-subtitle font-secondary text-muted text-center padding-t-30">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
-                        </div>
-                    </div>
-                    <div class="row margin-t-50">
-                        <div class="col-md-4">
-                            <div class="text-center pricing-box">
-                                <h4 class="text-uppercase">Economy</h4>
-                                <h1>$9.90</h1>
-                                <h6 class="text-uppercase text-muted">Billing Per Month</h6>
-                                <div class="pricing-border"></div>
-                                <div class="plan-features margin-t-30">
-                                    <p>Bandwidth: 1GB</p>
-                                    <p>Onlinespace: 50MB</p>
-                                    <p>Support: No</p>
-                                    <p>1 Domain</p>
-                                    <p>No Hidden Fees</p>
-                                </div>
-                                <a href="#" class="btn btn-custom waves-effect waves-light margin-t-30">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center pricing-box bg-white price-active">
-                                <h4 class="text-uppercase">Deluxe</h4>
-                                <h1>$19.90</h1>
-                                <h6 class="text-uppercase text-muted">Billing Per Month</h6>
-                                <div class="pricing-border"></div>
-                                <div class="plan-features margin-t-30">
-                                    <p>Bandwidth: 10GB</p>
-                                    <p>Onlinespace: 500MB</p>
-                                    <p>Support: Yes</p>
-                                    <p>10 Domain</p>
-                                    <p>No Hidden Fees</p>
-                                </div>
-                                <a href="#" class="btn btn-custom waves-effect waves-light margin-t-30">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="text-center pricing-box">
-                                <h4 class="text-uppercase">Ultimate</h4>
-                                <h1>$29.90</h1>
-                                <h6 class="text-uppercase text-muted">Billing Per Month</h6>
-                                <div class="pricing-border"></div>
-                                <div class="plan-features margin-t-30">
-                                    <p>Bandwidth: 100GB</p>
-                                    <p>Onlinespace: 2 GB</p>
-                                    <p>Support: Yes</p>
-                                    <p>Unlimited Domain</p>
-                                    <p>No Hidden Fees</p>
-                                </div>
-                                <a href="#" class="btn btn-custom waves-effect waves-light margin-t-30">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--ENd PRICING-->
-
-
-            <!--START TESTIMONIAL-->
-            <section class="section" id="team">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="section-title text-center">Our Team</h1>
-                            <div class="section-title-border margin-t-20"></div>
-                            <p class="section-subtitle text-muted text-center font-secondary padding-t-30">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
-                        </div>
-                    </div>
-                    <div class="row margin-t-50">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="team-box text-center">
-                                <div class="team-wrapper">
-                                    <div class="team-member">
-                                        <img alt="" src="images/team/img-1.jpg" class="img-responsive img-rounded">
-                                    </div>
-                                </div>
-                                <h4 class="team-name">Frank Johnson</h4>
-                                <p class="text-uppercase team-designation">CEO</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-3 col-sm-6">
-                            <div class="team-box text-center">
-                                <div class="team-wrapper">
-                                    <div class="team-member">
-                                        <img alt="" src="images/team/img-2.jpg" class="img-responsive img-rounded">
-                                    </div>
-                                </div>
-                                <h4 class="team-name">Elaine Stclair</h4>
-                                <p class="text-uppercase team-designation">Designer</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="team-box text-center">
-                                <div class="team-wrapper">
-                                    <div class="team-member">
-                                        <img alt="" src="images/team/img-3.jpg" class="img-responsive img-rounded">
-                                    </div>
-                                </div>
-                                <h4 class="team-name">Wanda Arthur</h4>
-                                <p class="text-uppercase team-designation">Developer</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="team-box text-center">
-                                <div class="team-wrapper">
-                                    <div class="team-member">
-                                        <img alt="" src="images/team/img-4.jpg" class="img-responsive img-rounded">
-                                    </div>
-                                </div>
-                                <h4 class="team-name">Joshua Stemple</h4>
-                                <p class="text-uppercase team-designation">Manager</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!--END TESTIMONIAL-->
 
 
             <!--START PROCESS-->
@@ -364,9 +215,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h1 class="section-title text-center">Work Process</h1>
+                            <h1 class="section-title text-center">Como funciona</h1>
                             <div class="section-title-border margin-t-20"></div>
-                            <p class="section-subtitle text-muted text-center font-secondary padding-t-30">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
+                            <p class="section-subtitle text-muted text-center font-secondary padding-t-30">Sem complicações para você pegar a bike.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -381,74 +232,33 @@
                         <div class="col-md-4 plan-line">
                             <div class="text-center process-box">
                                 <i class="pe-7s-pen text-custom"></i>
-                                <h4 class="padding-t-15">Tell us what you need</h4>
-                                <p class="text-muted">Lorem ipsum dolor Lorem ipsum sit amet.</p>
+                                <h4 class="padding-t-15">Encontre o ponto mais perto</h4>
+                                <p class="text-muted">Faça login na plataforma e escolha uma bicicleta.</p>
                             </div>
                         </div>
                         <div class="col-md-4 plan-line">
                             <div class="text-center process-box">
                                 <i class="pe-7s-id text-custom"></i>
-                                <h4 class="padding-t-15">Get free quotes</h4>
-                                <p class="text-muted">Lorem ipsum dolor Lorem ipsum sit amet.</p>
+                                <h4 class="padding-t-15">Saia pedalando por aí</h4>
+                                <p class="text-muted">São mais de Xkm para você usar.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center process-box">
                                 <i class="pe-7s-target text-custom"></i>
-                                <h4 class="padding-t-15">Deliver high quality product</h4>
-                                <p class="text-muted">Lorem ipsum dolor Lorem ipsum sit amet.</p>
+                                <h4 class="padding-t-15">Devolva no ponto mais próximo</h4>
+                                <p class="text-muted">Depois de usar é só travar a bicicleta.</p>
                             </div>
                         </div>
                         <div class="text-center">
-                            <a href="#" class="btn btn-custom waves-light waves-effect margin-t-50">Get Started</a>
+                            <a href="#" class="btn btn-custom waves-light waves-effect margin-t-50">Solicite um convite</a>
                         </div>
                     </div>
                 </div>
             </section>
             <!--END PROCESS-->
 
-            <!--START TESTIMONIAL-->
-            <section class="section" id="testi">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="section-title text-center">People says</h1>
-                            <div class="section-title-border margin-t-20"></div>
-                            <p class="section-subtitle text-muted text-center font-secondary padding-t-30">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
-                        </div>
-                    </div>
-                    <div class="row margin-t-50">
-                        <div class="col-md-4">
-                            <div class="testimonial-box margin-t-30">
-                                <img src="images/testimonials/user-1.png" alt="" class="img-responsive center-block img-thumbnail img-circle">
-                                <div class="bg-gray testimonial-decs">
-                                    <h5 class="text-muted text-center"><b>"</b>I have been using this template for all my company needs for the last 3 years and couldn’t be happier with their service and expertise.</h5>
-                                </div>
-                                <h5 class="text-center text-uppercase padding-t-15">Ruben Reed -<span class="text-muted text-capitalize">Charleston</span></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="testimonial-box margin-t-30">
-                                <img src="images/testimonials/user-3.png" alt="" class="img-responsive center-block img-thumbnail img-circle">
-                                <div class="bg-gray testimonial-decs">
-                                    <h5 class="text-muted text-center"><b>"</b>I have been using this template for all my company needs for the last 3 years and couldn’t be happier with their service and expertise.</h5>
-                                </div>
-                                <h5 class="text-center text-uppercase padding-t-15">Michael P. Howlett -<span class="text-muted text-capitalize">Worcester</span></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="testimonial-box margin-t-30">
-                                <img src="images/testimonials/user-2.png" alt="" class="img-responsive center-block img-thumbnail img-circle">
-                                <div class="bg-gray testimonial-decs">
-                                    <h5 class="text-muted text-center"><b>"</b>I have been using this template for all my company needs for the last 3 years and couldn’t be happier with their service and expertise.</h5>
-                                </div>
-                                <h5 class="text-center text-uppercase padding-t-15">Theresa D. Sinclair -<span class="text-muted text-capitalize">Lynchburg</span></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--END TESTIMONIAL-->
+           
 
 
             <!--START GET STARTED-->
@@ -482,67 +292,17 @@
                             </ul>
                         </div>
                         <div class="col-md-3 text-white margin-t-30">
-                            <p class="margin-b-0 contact-title"><i class="pe-7s-call"></i> &nbsp;+91 123 4556 789</p>
+                            <p class="margin-b-0 contact-title"><i class="pe-7s-call"></i> &nbsp;+55 67 9999 9999</p>
                         </div>
                         <div class="col-md-3 text-white margin-t-30 text-right">
-                            <p class="contact-title"><i class="pe-7s-mail-open"></i>&nbsp; Support@info.com</p>
+                            <p class="contact-title"><i class="pe-7s-mail-open"></i>&nbsp; Support@ciclogrande.com</p>
                         </div>
                     </div>
                 </div>
             </section>
             <!--END SOCIAL-->
 
-            <!--START FOOTER-->
-            <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 margin-t-20">
-                            <h5>Staro</h5>
-                            <div class="text-muted margin-t-20">
-                                <ul class="list-unstyled footer-list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 margin-t-20">
-                            <h5>Information</h5>
-                            <div class="text-muted margin-t-20">
-                                <ul class="list-unstyled footer-list">
-                                    <li><a href="#">Terms & Condition</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Jobs</a></li>
-                                    <li><a href="#">Bookmarks</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 margin-t-20">
-                            <h5>Support</h5>
-                            <div class="text-muted margin-t-20">
-                                <ul class="list-unstyled footer-list">
-                                    <li><a href="">Faq</a></li>
-                                    <li><a href="">Contact</a></li>
-                                    <li><a href="">Disscusion</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 margin-t-20">
-                            <h5>Subscribe</h5>
-                            <div class="text-muted margin-t-20">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula eget dolor.</p>
-                            </div>
-                            <form class="form subscribe">
-                                <input placeholder="Email" class="form-control" required>
-                                <a href="#" class="submit"><i class="pe-7s-paper-plane"></i></a>
-                            </form>
-                        </div>
-                    </div>                    
-                </div>
-            </footer>
-            <!--END FOOTER-->
-
+       
 
             <!--START FOOTER ALTER-->
             <div class="container">
@@ -551,7 +311,7 @@
                         <div class="footer-alt-border"></div>
                         <div class="footer-alt">
                             <div class="pull-left float-none">
-                                <p class="copy-rights text-muted">2017 © Staro. Design by Coderthemes</p>
+                                <p class="copy-rights text-muted">2017 © </p>
                             </div>
                             <div class="pull-right float-none">
                                 <img src="images/payment.png" alt="payment-img" height="36" />
