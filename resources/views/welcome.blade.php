@@ -59,11 +59,9 @@
                                 <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#services">Vantagens</a>
                             </li>
-                            <li>
-                                <a href="#team">Team</a>
-                            </li>                        
+                            
                             <li>
                                 <a href="#contact">Contato</a>
                             </li>

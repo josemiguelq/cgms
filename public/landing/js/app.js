@@ -1,4 +1,4 @@
-/* Theme Name: Staro - Responsive Landing page template
+/* Theme Name: Ciclo Grande
    Author: Coderthemes
    Version: 1.0.0
    Created: Aug 2017
