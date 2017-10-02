@@ -19,4 +19,4 @@ use Illuminate\Http\Request;
   });
 
   // Route::resource('users', 'Api\ApiUserController@showAction');  
-  Route::resource('users', 'Api\ApiUserController');  
+  Route::resource('users/{id}', 'Api\ApiUserController');  
