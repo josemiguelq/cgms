@@ -12,7 +12,7 @@ use \Illuminate\Http\Request;
 class ApiPlataformController extends Controller
 {
    
-   
+
     protected function index($id)
     {
         if($id == '1'){
@@ -22,6 +22,14 @@ class ApiPlataformController extends Controller
             return response('Não autorizado', 401)
                   ->header('Content-Type', 'text/plain'); 
         }       
+    }
+
+    protected function unauth()
+    {
+        
+            return response('Não autorizado', 401)
+                  ->header('Content-Type', 'text/plain');        
+       
     }
 
     
