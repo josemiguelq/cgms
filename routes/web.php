@@ -21,3 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/plataform', 'PlataformController@index')->name('new_plataform');
+Route::post('/plataform', 'PlataformController@create')->name('create_plataform');
+

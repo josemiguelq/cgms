@@ -20,8 +20,9 @@ use Illuminate\Http\Request;
 
   Route::get('users/{id}', 'Api\ApiUserController@index')->name('all_users');  
   Route::get('users/', 'Api\ApiUserController@unauth')->name('unathorized');  
-  Route::get('plataform/', 'Api\ApiUserController@unauth')->name('unathorized');  
   
+  Route::get('plataforms/{id}', 'Api\ApiPlataformController@index')->name('all_plataforms');  
+  Route::get('plataforms/', 'Api\ApiPlataformController@unauth')->name('unathorized');  
   
   
 

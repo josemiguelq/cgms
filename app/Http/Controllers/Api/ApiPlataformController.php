@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\User;
+use App\Plataform;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -12,16 +12,16 @@ use \Illuminate\Http\Request;
 class ApiPlataformController extends Controller
 {
    
-    protected function index(Request $request)
+   
+    protected function index($id)
     {
         if($id == '1'){
-           $users = \App\User::all();    
-           return response()->json($users);     
+           $plataforms = \App\Plataform::all();    
+           return response()->json($plataforms);     
         }else{
             return response('Não autorizado', 401)
                   ->header('Content-Type', 'text/plain'); 
-        }
-       
+        }       
     }
 
     

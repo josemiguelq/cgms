@@ -96,9 +96,9 @@ p {
   top: 0;
 }
 .bg-overlay-gradient{
-  background: #e585aa; 
-  background: -webkit-linear-gradient(to right, #e585aa, #af83be); 
-  background: linear-gradient(to right, #e585aa, #af83be);
+  background: #54b26d; 
+  background: -webkit-linear-gradient(to right, #54b26d, #87d09b); 
+  background: linear-gradient(to right, #54b26d, #87d09b);
   opacity: 0.9;
 }
 .bg-overlay-light {

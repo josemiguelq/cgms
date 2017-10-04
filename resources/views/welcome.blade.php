@@ -130,7 +130,7 @@
                         <div class="col-md-8 col-md-offset-2">
                             <h1 class="section-title text-center">Vantagens</h1>
                             <div class="section-title-border margin-t-20"></div>
-                            <p class="section-subtitle text-muted text-center padding-t-30 font-secondary">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
+                            <p class="section-subtitle text-muted text-center padding-t-30 font-secondary">Se liga nas vantagens que você tem ao pedalar.</p>
                         </div>
                     </div>
                     <div class="row margin-t-30">
@@ -138,21 +138,21 @@
                             <div class="services-box text-center">
                                 <i class="pe-7s-diamond text-custom"></i>
                                 <h4 class="padding-t-15">Saúde</h4>
-                                <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                <p class="padding-t-15 text-muted"></p>
                             </div>
                         </div>
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
                                 <i class="pe-7s-display2 text-custom"></i>
                                 <h4 class="padding-t-15">Economia</h4>
-                                <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                <p class="padding-t-15 text-muted"></p>
                             </div>
                         </div>
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
                                 <i class="pe-7s-piggy text-custom"></i>
                                 <h4 class="padding-t-15">Mobilidade</h4>
-                                <p class="padding-t-15 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                <p class="padding-t-15 text-muted"></p>
                             </div>
                         </div>
                     </div>
@@ -264,10 +264,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center">
-                            <h1 class="get-started-title text-white text-capitalize">Let's Get Started</h1>
+                            <h1 class="get-started-title text-white text-capitalize">Largue o carro, e venha de bike</h1>
 
-                            <p class="section-subtitle font-secondary text-white text-center padding-t-30">Etiam sed.Interdum consequat proin vestibulum class at a euismod mus luctus quam.Lorem ipsum dolor sit amet, consectetur adipisicing eli.class at a euismod mus luctus quam.</p>
-                            <a href="#" class="btn btn-bg-white waves-effect margin-t-20">Get Started</a>
+                            <p class="section-subtitle font-secondary text-white text-center padding-t-30">Comece a economizar e realizar exercícios, a hora é agora.</p>
+                            <a href="#" class="btn btn-bg-white waves-effect margin-t-20">Começar</a>
                         </div>
                     </div>
                 </div>
@@ -292,7 +292,7 @@
                             <p class="margin-b-0 contact-title"><i class="pe-7s-call"></i> &nbsp;+55 67 9999 9999</p>
                         </div>
                         <div class="col-md-3 text-white margin-t-30 text-right">
-                            <p class="contact-title"><i class="pe-7s-mail-open"></i>&nbsp; Support@ciclogrande.com</p>
+                            <p class="contact-title"><i class="pe-7s-mail-open"></i>&nbsp; support@ciclogrande.com</p>
                         </div>
                     </div>
                 </div>
