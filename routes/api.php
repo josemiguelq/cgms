@@ -22,4 +22,6 @@ use Illuminate\Http\Request;
   Route::get('users/', 'Api\ApiUserController@unauth')->name('unathorized');  
   Route::get('plataform/', 'Api\ApiUserController@unauth')->name('unathorized');  
   
+  
+  
 

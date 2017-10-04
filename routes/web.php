@@ -13,7 +13,9 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('landing_page');
+
+Route::post('/', 'InvitationController@create')->name('new_invitation');  
 
 Auth::routes();
 

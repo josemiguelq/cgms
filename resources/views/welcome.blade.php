@@ -107,10 +107,10 @@
                                 <div class="col-md-4 col-md-offset-1 margin-t-30">
                                     <div class="home-registration-form bg-white">
                                         <h4 class="form-heading text-center">Receba um convite</h4>
-                                        <form class="registration-form" id="contact-form">
-                                            <input type="text" id="exampleInputName1" class="form-control registration-input-box" placeholder="Nome">
-                                            <input type="email" id="exampleInputEmail1" class="form-control registration-input-box" placeholder="Email">
-                                            <input type="" name="" class="form-control registration-input-box" rows="4" placeholder="Celular"></input>
+                                        <form class="registration-form" id="contact-form" method="POST" action="{{ route('new_invitation') }}">
+                                            <input type="text" name="name" id="name" class="form-control registration-input-box" placeholder="Nome">
+                                            <input type="email" name="email" id="email" class="form-control registration-input-box" placeholder="Email">
+                                            <input type="" name="phone" class="form-control registration-input-box" rows="4" placeholder="Celular"></input>
                                             <button class="btn btn-custom home-btn-width waves-effect waves-light text-uppercase">Receber um convite</button>
                                         </form>
                                     </div>
