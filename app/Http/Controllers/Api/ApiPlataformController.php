@@ -9,11 +9,10 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use \Illuminate\Http\Response;
 use \Illuminate\Http\Request;
 
-class ApiUserController extends Controller
+class ApiPlataformController extends Controller
 {
    
-
-    protected function index($id)
+    protected function index(Request $request)
     {
         if($id == '1'){
            $users = \App\User::all();    
@@ -25,11 +24,5 @@ class ApiUserController extends Controller
        
     }
 
-    protected function unauth()
-    {
-        
-            return response('Não autorizado', 401)
-                  ->header('Content-Type', 'text/plain');        
-       
-    }
+    
 }

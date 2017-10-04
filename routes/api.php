@@ -18,5 +18,8 @@ use Illuminate\Http\Request;
       return response()->json(['message' => 'Jobs API', 'status' => 'Connected']);;
   });
 
-  // Route::resource('users', 'Api\ApiUserController@showAction');  
-  Route::resource('users/{id}', 'Api\ApiUserController');  
+  Route::get('users/{id}', 'Api\ApiUserController@index')->name('all_users');  
+  Route::get('users/', 'Api\ApiUserController@unauth')->name('unathorized');  
+  Route::get('plataform/', 'Api\ApiUserController@unauth')->name('unathorized');  
+  
+

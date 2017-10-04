@@ -110,7 +110,7 @@ p {
   position: relative;
 }
 .section-title-border{
-  background-color: #e278a0;
+  background-color: #abdf59;
   width: 50px;
   height: 2px;
   margin-right: auto;
@@ -146,7 +146,7 @@ iframe {
   color: #fff !important;
 }
 .text-custom{
-  color: #e278a0 !important;
+  color: #abdf59 !important;
 }
 .text-gray{
   color: #777 !important;
@@ -162,8 +162,8 @@ iframe {
   border-radius: 30px;
 }
 .btn-custom {
-  background-color: #e278a0 !important;
-  border: 1px solid #e278a0 !important;
+  background-color: #abdf59 !important;
+  border: 1px solid #abdf59 !important;
   color: #fff;
   transition: all 0.3s;
 }
@@ -261,7 +261,7 @@ iframe {
 }
 .navbar-custom.navbar-white .navbar-nav li.active a,.navbar-custom.navbar-white .navbar-nav li a:hover,
 .navbar-custom.navbar-white .navbar-nav li a:focus,.navbar-custom.navbar-white .navbar-nav li a:active {
-  color: #e278a0 !important;
+  color: #abdf59 !important;
 }
 .navbar-custom.navbar-white .navbar-nav li a,.navbar-custom.navbar-white .navbar-brand ,.navbar-white .navbar-toggle{
   color: #393f4f !important;
@@ -451,7 +451,7 @@ iframe {
 .features-item-list li:before{
   content: "";
   border-radius: 50%;
-  background-color: #e278a0;
+  background-color: #abdf59;
   width:7px;
   height:7px;
   position: absolute;
@@ -536,7 +536,7 @@ iframe {
   top: 83px;
   color: #fff;
   z-index: 9;
-  background-color: #e278a0;
+  background-color: #abdf59;
 }
 .process-left-icon-1 i{
   left: 63%;
