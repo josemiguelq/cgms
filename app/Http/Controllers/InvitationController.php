@@ -28,4 +28,10 @@ class InvitationController extends Controller
         ]);
         return redirect()->route('landing_page');
     }
+
+    protected function index()
+    {
+       $users = \App\Invitation::all();    
+           return response()->json($users);     
+    }
 }
