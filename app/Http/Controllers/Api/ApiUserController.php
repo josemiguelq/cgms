@@ -15,6 +15,7 @@ class ApiUserController extends Controller
 
     protected function index($id)
     {
+      //implementar hash identificador dos pontos
         if($id == '1'){
            $users = \App\User::all();    
            return response()->json($users);     

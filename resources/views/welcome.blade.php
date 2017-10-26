@@ -72,8 +72,8 @@
                                     </li>
                                 @else
                                 <li>
-                                    <a href="{{ route('login') }}">Login</a>
-                                    </li>
+<!--                                     <a href="{{ route('login') }}">Login</a>
+ -->                                    </li>
                                     <li><a href="{{ route('register') }}">Register</a>
                                     </li>
                                 @endauth
@@ -82,7 +82,8 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <button type="button" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Login</button>
+
+                                <a type="button" href="{{ route('login') }}" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -143,14 +144,14 @@
                         </div>
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
-                                <i class="pe-7s-display2 text-custom"></i>
+                                <i class="pe-7s-piggy text-custom"></i>
                                 <h4 class="padding-t-15">Economia</h4>
                                 <p class="padding-t-15 text-muted"></p>
                             </div>
                         </div>
                         <div class="col-md-4 margin-t-20">
                             <div class="services-box text-center">
-                                <i class="pe-7s-piggy text-custom"></i>
+                                <i class="pe-7s-global text-custom"></i>
                                 <h4 class="padding-t-15">Mobilidade</h4>
                                 <p class="padding-t-15 text-muted"></p>
                             </div>
@@ -228,14 +229,14 @@
                     <div class="row margin-t-50">
                         <div class="col-md-4 plan-line">
                             <div class="text-center process-box">
-                                <i class="pe-7s-pen text-custom"></i>
+                                <i class="pe-7s-browser text-custom"></i>
                                 <h4 class="padding-t-15">Encontre o ponto mais perto</h4>
                                 <p class="text-muted">Faça login na plataforma e escolha uma bicicleta.</p>
                             </div>
                         </div>
                         <div class="col-md-4 plan-line">
                             <div class="text-center process-box">
-                                <i class="pe-7s-id text-custom"></i>
+                                <i class="pe-7s-bicycle text-custom"></i>
                                 <h4 class="padding-t-15">Saia pedalando por aí</h4>
                                 <p class="text-muted">São mais de Xkm para você usar.</p>
                             </div>
@@ -281,18 +282,18 @@
                     <div class="row">
                         <div class="col-md-6">
                             <ul class="list-inline social margin-t-20">
-                                <li><a href="" class="social-icon"><i class="pe-so-facebook"></i></a></li>
-                                <li><a href="" class="social-icon"><i class="pe-so-twitter"></i></a></li>
+                                <li><a href="https://facebook.com" class="social-icon"><i class="pe-so-facebook"></i></a></li>
+                                <!-- <li><a href="" class="social-icon"><i class="pe-so-twitter"></i></a></li>
                                 <li><a href="" class="social-icon"><i class="pe-so-linkedin"></i></a></li>
                                 <li><a href="" class="social-icon"><i class="pe-so-google-plus"></i></a></li>
-                                <li><a href="" class="social-icon"><i class="pe-so-youtube-1"></i></a></li>
+                                <li><a href="" class="social-icon"><i class="pe-so-youtube-1"></i></a></li> -->
                             </ul>
                         </div>
                         <div class="col-md-3 text-white margin-t-30">
-                            <p class="margin-b-0 contact-title"><i class="pe-7s-call"></i> &nbsp;+55 67 9999 9999</p>
+                            <p class="margin-b-0 contact-title"><i class="pe-7s-call"></i> &nbsp;+55 67 9 9191-0048</p>
                         </div>
                         <div class="col-md-3 text-white margin-t-30 text-right">
-                            <p class="contact-title"><i class="pe-7s-mail-open"></i>&nbsp; support@ciclogrande.com</p>
+                            <p class="contact-title"><i class="pe-7s-mail-open"></i>&nbsp; suporte@ciclogrande.com</p>
                         </div>
                     </div>
                 </div>
@@ -309,10 +310,7 @@
                         <div class="footer-alt">
                             <div class="pull-left float-none">
                                 <p class="copy-rights text-muted">2017 © </p>
-                            </div>
-                            <div class="pull-right float-none">
-                                <img src="images/payment.png" alt="payment-img" height="36" />
-                            </div>
+                            </div>                            
                             <div class="clearfix"></div>
                         </div>
                     </div>

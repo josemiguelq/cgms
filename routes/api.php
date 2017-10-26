@@ -21,8 +21,9 @@ use Illuminate\Http\Request;
   Route::get('users/{id}', 'Api\ApiUserController@index')->name('all_users');  
   Route::get('users/', 'Api\ApiUserController@unauth')->name('unathorized');  
   
-  Route::get('plataforms/{id}', 'Api\ApiPlataformController@index')->name('all_plataforms');  
-  Route::get('plataforms/', 'Api\ApiPlataformController@unauth')->name('unathorized');  
-  
+  //
+  Route::post('plataforms/', 'Api\ApiPlataformController@index')->name('all_plataforms');    
+  Route::post('vacancies/','Api\ApiVacancyController@index')->name('all_vacancies');
+  Route::get('vacancies/','Api\ApiVacancyController@index')->name('gall_vacancies');
   
 

@@ -15,4 +15,8 @@ class Plataform extends Model
         'name', 'lat', 'long','vacancy',
     ];
 
+    public function vacancies()
+    {
+        return $this->hasMany('App\Vacancy');
+    }
 }

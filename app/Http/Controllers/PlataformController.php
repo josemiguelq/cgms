@@ -14,6 +14,12 @@ class PlataformController extends Controller
      */
     protected $redirectTo = '/';
 
+   protected function index()
+    {
+      //implementar hash identificador dos pontos        
+           $plataforms = \App\Plataform::all();    
+           return view('plataform/index')->with ('plataforms',$plataforms);
+    }
     /**
      * Create a new user instance after a valid registration.
      *     
@@ -35,7 +41,7 @@ class PlataformController extends Controller
      *     
      * 
      */
-    protected function index()
+    protected function new()
     {
 	    return view('plataform/new');
     }
