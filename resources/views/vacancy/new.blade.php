@@ -34,7 +34,7 @@
                             <label for="status" class="col-md-4 control-label">Status</label>
 
                             <div class="col-md-6">
-                                {!! Form::checkbox('status', '1', true,['id' => 'status']) !!}
+                                {!! Form::checkbox('status', '1', false,['id' => 'status']) !!}
                             </div>
                         </div>
                         

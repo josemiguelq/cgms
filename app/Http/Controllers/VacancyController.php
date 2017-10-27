@@ -21,6 +21,9 @@ class VacancyController extends Controller
      */
     protected function create(Request $request)
     {
+        if(!isset($request['status'])){
+            $request['status'] = '0';
+        }
     	return Vacancy::create([
             'number' => $request['number'],            
             'plataform_id' => $request['plataform_id'],                                          
