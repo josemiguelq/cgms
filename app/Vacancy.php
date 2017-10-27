@@ -23,6 +23,6 @@ class Vacancy extends Model
     */
     public function plataform()
 	{
-    return $this->belongsTo('App\Plataform', 'plataform_id');
+    return $this->belongsTo('App\Plataform', 'plataform_id')->withDefault();
 	}
 }
