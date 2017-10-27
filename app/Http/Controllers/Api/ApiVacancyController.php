@@ -28,7 +28,7 @@ class ApiVacancyController extends Controller
            return response()->json($vacancies);     
         }else{
             return response('Não autorizado', 401)
-                  ->header('Content-Type', 'text/plain'); 
+                  ->header('Content-Type', 'application/json'); 
         } 
         }      
     }
@@ -37,7 +37,7 @@ class ApiVacancyController extends Controller
     {
         
             return response('Não autorizado', 401)
-                  ->header('Content-Type', 'text/plain');        
+                  ->header('Content-Type', 'application/json');        
        
     }
 
