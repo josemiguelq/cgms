@@ -12,7 +12,7 @@ class Vacancy extends Model
      * @var array
      */
     protected $fillable = [
-        'number', 'plataform','status',
+        'number', 'plataform_id','status',
     ];
 
 

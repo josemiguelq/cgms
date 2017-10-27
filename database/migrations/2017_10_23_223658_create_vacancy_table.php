@@ -17,7 +17,7 @@ class CreateVacancyTable extends Migration
             $table->increments('id');
             $table->integer('number');
             $table->integer('plataform_id')->references('id')->on('plataforms')->onDelete('cascade');
-            $table->boolean('status');
+            $table->integer('status');
             $table->timestamps();
         });
     }

@@ -24,7 +24,7 @@ class VacancyController extends Controller
     	return Vacancy::create([
             'number' => $request['number'],            
             'plataform_id' => $request['plataform_id'],                                          
-            'status' => '0',
+            'status' => $request['status'],
         ]);
          
     }
