@@ -25,5 +25,8 @@ use Illuminate\Http\Request;
   Route::post('plataforms/', 'Api\ApiPlataformController@index')->name('all_plataforms');    
   Route::post('vacancies/','Api\ApiVacancyController@index')->name('all_vacancies');
   Route::get('vacancies/','Api\ApiVacancyController@index')->name('gall_vacancies');
+
+  Route::get('vacancies/update','Api\ApiVacancyController@updateVacancy')->name('update_vacancy');
+  Route::post('vacancies/update','Api\ApiVacancyController@updateVacancy')->name('update_vacancy');
   
 
