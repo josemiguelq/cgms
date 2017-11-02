@@ -11,8 +11,12 @@ img {
 }
 
 .back {
-    background-image: url("/landing/images/background.jpg");
-    background-repeat: : repeat, no-repeat, no-repeat;
-    background-position: top left, center center, bottom center;
-    background-attachment: fixed, fixed, fixed;
+    background-image: url("/landing/images/background.jpg");    
+     /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
