@@ -12,4 +12,7 @@ img {
 
 .back {
     background-image: url("/landing/images/background.jpg");
+    background-repeat: : repeat, no-repeat, no-repeat;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
 }
