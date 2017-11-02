@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $plataforms = \App\Plataform::all();                
+        return view('home')->with('plataforms', $plataforms);
+        // return view('home');
     }
 }

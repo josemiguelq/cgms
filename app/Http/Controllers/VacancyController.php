@@ -42,4 +42,17 @@ class VacancyController extends Controller
          $plataforms = \App\Plataform::all();                
 	    return view('vacancy/new')->with('plataforms', $plataforms);
     }
+
+
+     /**
+     * Create a new user instance after a valid registration.
+     *     
+     * 
+     */
+    protected function request($id)
+    {
+        $vacancies = \App\Vacancy::where('plataform_id', $id)->get();    
+           return response()->json($vacancies);                        
+    }
+
 }

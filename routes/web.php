@@ -26,5 +26,6 @@ Route::get('/plataform', 'PlataformController@index')->name('index_plataform');
 Route::post('/plataform/create', 'PlataformController@create')->name('create_plataform');
 Route::post('/plataform/new', 'PlataformController@new')->name('new_plataform');
 
+Route::get('/vacancy/request/{id}', 'VacancyController@request')->name('request_vacancy');
 Route::get('/vacancy', 'VacancyController@index')->name('new_vacancy');
 Route::post('/vacancy', 'VacancyController@create')->name('create_vacancy');
