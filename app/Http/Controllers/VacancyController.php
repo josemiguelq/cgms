@@ -52,7 +52,7 @@ class VacancyController extends Controller
     protected function request($id)
     {
         $vacancies = \App\Vacancy::where('plataform_id', $id)->get();    
-           return response()->json($vacancies);                        
+        return view('vacancy/request')->with('vacancies', $vacancies);
     }
 
 }
