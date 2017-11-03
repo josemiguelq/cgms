@@ -23,7 +23,7 @@
     <img class="points" src="images/points.png" usemap="#points">
     <map name="points">
         <area target="" alt="point1" title="point1" href="vacancy/request/1" coords="361,24,266,133" shape="rect">
-        <area target="" alt="point2" title="point2" href="" coords="vacancy/request/2" shape="rect">
+        <area target="" alt="point2" title="point2" href="vacancy/request/2" coords="406,129,619,284" shape="rect">
     </map>
 
                             <script type="text/javascript" src="landing/js/jquery.rwdImageMaps.js"></script>
