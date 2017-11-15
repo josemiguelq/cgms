@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Plataform;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+
 
 class PlataformController extends Controller
 {
@@ -27,6 +29,21 @@ class PlataformController extends Controller
      */
     protected function create(Request $request)
     {
+        request()->validate([
+            'name' => 'required',
+            'lat' => 'required',
+            'long' => 'required',
+            'vacancy' => 'required|integer',
+        ]);
+
+//         $v = Validator::make($request, [
+//     'name' => 'required',
+//     'lat' => 'required',
+//     'long' => 'required',
+//     'vacancy' => 'required|numeric',
+
+// ]);
+
     	return Plataform::create([
             'name' => $request['name'],
             'lat' => $request['lat'],           
