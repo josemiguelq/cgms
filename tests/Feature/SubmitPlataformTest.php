@@ -25,18 +25,36 @@ class SubmitPlataformTest extends TestCase
     function guest_can_submit_a_new_plataform()
     {
         $response = $this->post('/plataform/create', [
-            'name' => 'Example Title',
-            'lat' => 'http://example.com',
-            'long' => 'http://example.com',
-            'vacancy' => 'fa',
+            'name' => 'Example',
+            'lat' => '12.5',
+            'long' => '-12',
+            'vacancy' => '2',
         ]);
 
         $this->assertDatabaseHas('plataforms', [
-            'name' => 'Example Title'
+            'name' => 'Example'
         ]);
 
         $response
             ->assertStatus(200);
+        
+    }
+    /** @test */
+    function guest_submit_a_new_plataform_with_nointeger()
+    {
+        $response = $this->post('/plataform/create', [
+            'name' => 'Example',
+            'lat' => '12.5',
+            'long' => '-12',
+            'vacancy' => 'e2',
+        ]);
+
+        // $this->assertDatabaseHas('plataforms', [
+        //     'name' => 'Example'
+        // ]);
+
+        $response
+            ->assertStatus(302);
         
     }
 }

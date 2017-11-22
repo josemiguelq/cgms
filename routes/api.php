@@ -22,11 +22,11 @@ use Illuminate\Http\Request;
   Route::get('users/', 'Api\ApiUserController@unauth')->name('unathorized');  
   
   //
-  Route::post('plataforms/', 'Api\ApiPlataformController@index')->name('all_plataforms');    
-  Route::post('vacancies/','Api\ApiVacancyController@index')->name('all_vacancies');
-  Route::get('vacancies/','Api\ApiVacancyController@index')->name('gall_vacancies');
+  Route::post('plataforms/', 'Api\ApiPlataformController@index')->name('all_plataforms')->middleware('auth');    
+  Route::post('vacancies/','Api\ApiVacancyController@index')->name('all_vacancies')->middleware('auth');
+  Route::get('vacancies/','Api\ApiVacancyController@index')->name('gall_vacancies')->middleware('auth');
 
-  Route::get('vacancies/update','Api\ApiVacancyController@updateVacancy')->name('update_vacancy');
-  Route::post('vacancies/update','Api\ApiVacancyController@updateVacancy')->name('update_vacancy');
+  Route::get('vacancies/update','Api\ApiVacancyController@updateVacancy')->name('update_vacancy')->middleware('auth');
+  Route::post('vacancies/update','Api\ApiVacancyController@updateVacancy')->name('update_vacancy')->middleware('auth');
   
 
