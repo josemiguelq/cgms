@@ -28,7 +28,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "Acme\\": "app/Acme"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
