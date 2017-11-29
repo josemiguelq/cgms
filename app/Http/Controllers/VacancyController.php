@@ -68,7 +68,7 @@ class VacancyController extends Controller
             $vacancy->status = 1;            
             $vacancy->save();
             
-            return $vacancy;
+            return view('vacancy/unlock');
     }
     
 
