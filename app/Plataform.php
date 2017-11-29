@@ -15,6 +15,10 @@ class Plataform extends Model
         'name', 'lat', 'long','vacancy',
     ];
 
+public   $rules = [    
+    'name' => 'required',
+    'vacancy' => 'required|integer',
+];
     public function vacancies()
     {
         return $this->hasMany('App\Vacancy');

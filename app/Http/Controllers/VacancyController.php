@@ -55,4 +55,21 @@ class VacancyController extends Controller
         return view('vacancy/request')->with('vacancies', $vacancies);
     }
 
+    
+     /**
+     * Update the specified resource in storage.
+     *
+     * @param  Int  $id
+     * @return Response
+     */
+    public function update($id)
+    {
+            $vacancy = vacancy::find($id);
+            $vacancy->status = 1;            
+            $vacancy->save();
+            
+            return $vacancy;
+    }
+    
+
 }

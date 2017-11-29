@@ -27,5 +27,6 @@ Route::post('/plataform/create', 'PlataformController@create')->name('create_pla
 Route::post('/plataform/new', 'PlataformController@new')->name('new_plataform');
 
 Route::get('/vacancy/request/{id}', 'VacancyController@request')->name('request_vacancy');
+Route::get('/vacancy/update/{id}', 'VacancyController@update')->name('update_vacancy');
 Route::get('/vacancy', 'VacancyController@index')->name('new_vacancy')->middleware('auth');
 Route::post('/vacancy', 'VacancyController@create')->name('create_vacancy')->middleware('auth');

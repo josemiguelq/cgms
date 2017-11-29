@@ -19,13 +19,16 @@
                     Bem vindo de volta!
                     Escolha no mapa o ponto onde vai retirar a bicicleta.
                 </div>
-                
-    <img class="points" src="images/points.png" usemap="#points">
-    <map name="points">
+                <div id="container" style="position:relative;">
+   <a  href="vacancy/request/1"> <img style="position:absolute;margin: 20% 20% 50% 40%; max-height: 80px; max-width: 80px;" src="images/point.png"> </a>
+    <a  href="vacancy/request/2"> <img style="position:absolute;margin: 20% 20% 30% 60%; max-height: 80px; max-width: 80px;" src="images/point.png">            </a>
+    <img style="" class="points" src="images/maps.png">
+    </div>
+    <!-- <map name="points">
         <area target="" alt="point1" title="point1" href="vacancy/request/1" coords="361,24,266,133" shape="rect">
         <area target="" alt="point2" title="point2" href="vacancy/request/2" coords="406,129,619,284" shape="rect">
     </map>
-
+ -->
                             <script type="text/javascript" src="landing/js/jquery.rwdImageMaps.js"></script>
                             <script type="text/javascript" src="landing/js/jquery.rwdImageMaps.min.js"></script>
 

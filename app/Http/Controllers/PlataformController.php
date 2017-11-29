@@ -23,33 +23,30 @@ class PlataformController extends Controller
            return view('plataform/index')->with ('plataforms',$plataforms);
     }
     /**
-     * Create a new user instance after a valid registration.
+     * Create a new plataform instance after a valid registration.
      *     
      * return \App\Plataform
      */
     protected function create(Request $request)
     {
-        request()->validate([
+
+        $plataform = $this->validate(request(),[
             'name' => 'required',
             'lat' => 'required',
             'long' => 'required',
             'vacancy' => 'required|integer',
         ]);
 
-//         $v = Validator::make($request, [
-//     'name' => 'required',
-//     'lat' => 'required',
-//     'long' => 'required',
-//     'vacancy' => 'required|numeric',
+    Plataform::create($plataform);
+    
+    return $plataform;    
 
-// ]);
-
-    	return Plataform::create([
-            'name' => $request['name'],
-            'lat' => $request['lat'],           
-            'long' => $request['long'],           
-            'vacancy' => $request['vacancy'],           
-        ]);
+    	// return Plataform::create([
+     //        'name' => $request['name'],
+     //        'lat' => $request['lat'],           
+     //        'long' => $request['long'],           
+     //        'vacancy' => $request['vacancy'],           
+     //    ]);
          
     }
 

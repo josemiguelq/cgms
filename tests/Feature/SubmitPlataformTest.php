@@ -32,7 +32,10 @@ class SubmitPlataformTest extends TestCase
         ]);
 
         $this->assertDatabaseHas('plataforms', [
-            'name' => 'Example'
+            'name' => 'Example',
+            'lat' => '12.5',
+            'long' => '-12',
+            'vacancy' => '2',
         ]);
 
         $response

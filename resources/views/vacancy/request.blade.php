@@ -25,7 +25,7 @@
                                 @else
                                 <tr>
                                 <td>{{ $vacancy->number }}</td>
-                                <td><a href="" class="btn btn-sm btn-primary">Reservar</a></td>    
+                                <td><a href="{{ route('update_vacancy',$vacancy) }}" class="btn btn-sm btn-primary">Reservar</a></td>    
                                 </tr>                                    
 
                                 @endif    
