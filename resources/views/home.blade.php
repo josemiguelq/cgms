@@ -21,7 +21,7 @@
                 </div>
                 <div id="container" style="position:relative;">
    <a  href="vacancy/request/1"> <img style="position:absolute;margin: 20% 20% 50% 40%; max-height: 80px; max-width: 80px;" src="images/point.png"> </a>
-    <a  href="vacancy/request/2"> <img style="position:absolute;margin: 20% 20% 30% 60%; max-height: 80px; max-width: 80px;" src="images/point.png">            </a>
+    <a  href="vacancy/request/11"> <img style="position:absolute;margin: 20% 20% 30% 60%; max-height: 80px; max-width: 80px;" src="images/point.png">            </a>
     <img style="" class="points" src="images/maps.png">
     </div>
     <!-- <map name="points">
